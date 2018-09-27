@@ -26,7 +26,8 @@ public class Lab00
 			System.out.println(num);
 		
 		// Calls a function, in this case the 'char_count' function.
-		char_count(y, 'l');
+		int charactercount = char_count(y, 'l');
+		System.out.println("Found: " + charactercount);
 		
 		// A counting for loop. Begins counting at 1 and counts until 10.
 		for (int i=1; i<11; i++)
@@ -39,7 +40,7 @@ public class Lab00
    }
    // Declaring char_count function. Takes in a string, 's', and a character, 'c'.
    // Counts how many instances the character 'c' occurs in the string 's'.
-   public static void char_count(String s, char c)
+   public static int char_count(String s, char c)
    {	// Declares the count variable.
 		int count = 0;
 		
@@ -52,6 +53,7 @@ public class Lab00
 			}
 		}
 		// Prints the number of instances the character 'c' occurs in string 's'.
-		System.out.println("Found: " + count);
+		//System.out.println("Found: " + count);
+		return count;
    }
 }
